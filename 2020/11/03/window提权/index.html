@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>machao629</title>
+  <title>Window提权方法总结 | machao629</title>
   <meta name="keywords" content="">
-  <meta name="description" content="machao629">
+  <meta name="description" content="Window提权方法总结 | machao629">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -54,7 +54,7 @@
 
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/avatar.jpg" />
@@ -199,12 +199,51 @@
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-window提权" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Welcome-To-machao629-center-gt"><span class="toc-text">Welcome To machao629&#x2F;center&gt;</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Emachao629"><span class="toc-text">关于machao629</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AF%B4%E6%98%8E"><span class="toc-text">快捷键说明</span></a></li></ol></li></ol>
+        <h1 class="article-title">Window提权方法总结</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="渗透测试">渗透测试</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2020-11-04 21:31:50'>2020-11-03 17:46</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#0x00%E3%80%81window-%E6%8F%90%E6%9D%83%E5%9F%BA%E7%A1%80"><span class="toc-text">0x00、window 提权基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81window-%E5%86%85%E7%BD%AE%E7%94%A8%E6%88%B7%E5%92%8C%E7%BB%84%E3%80%82"><span class="toc-text">1、window 内置用户和组。</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E7%BD%AE%E7%94%A8%E6%88%B7"><span class="toc-text">内置用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E7%BD%AE%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-text">内置用户组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="toc-text">2、基本命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E6%9F%A5%E7%9C%8B%E7%94%A8%E6%88%B7"><span class="toc-text">1、查看用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E6%9D%83%E9%99%90"><span class="toc-text">2、查看当前权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7"><span class="toc-text">3、添加用户</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -217,16 +256,41 @@
     }
 </style>
 </div>
-            <h1 id="Welcome-To-machao629-center-gt"><a href="#Welcome-To-machao629-center-gt" class="headerlink" title="Welcome To machao629/center&gt;"></a><center>Welcome To machao629/center&gt;</h1><h2 id="关于machao629"><a href="#关于machao629" class="headerlink" title="关于machao629"></a>关于machao629</h2><p><strong>machao629</strong> 是一个记录学习的博客。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="快捷键说明"><a href="#快捷键说明" class="headerlink" title="快捷键说明"></a>快捷键说明</h2><blockquote>
-<p><a target="_blank" rel="noopener" href="http://yelog.org/2017/03/24/3-hexo-shortcuts/">http://yelog.org/2017/03/24/3-hexo-shortcuts/</a></p>
-</blockquote>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>此文总结了网上众多大佬的文章，并进行了复现。体现系统主要针对win7、win10。</p>
+<h1 id="0x00、window-提权基础"><a href="#0x00、window-提权基础" class="headerlink" title="0x00、window 提权基础"></a>0x00、window 提权基础</h1><h2 id="1、window-内置用户和组。"><a href="#1、window-内置用户和组。" class="headerlink" title="1、window 内置用户和组。"></a>1、window 内置用户和组。</h2><h3 id="内置用户"><a href="#内置用户" class="headerlink" title="内置用户"></a>内置用户</h3><ul>
+<li>Administrator : 系统管理员权限。用户绝对控制权。</li>
+<li>Guest : 来宾账户，仅具有最基本权限。默认被禁用，仅供访问共享资源的用户使用。</li>
+</ul>
+<h3 id="内置用户组"><a href="#内置用户组" class="headerlink" title="内置用户组"></a>内置用户组</h3><ul>
+<li>Administrator : 管理员组</li>
+<li>User组 ：新建用户所在的组</li>
+<li>Guests组 ：此组权限最低</li>
+<li>window系统内置组：只对某些目录具有读写权限(比如安装iis后系统中会自动添加两个账户)</li>
+</ul>
+<h2 id="2、基本命令"><a href="#2、基本命令" class="headerlink" title="2、基本命令"></a>2、基本命令</h2><h3 id="1、查看用户"><a href="#1、查看用户" class="headerlink" title="1、查看用户"></a>1、查看用户</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">λ net user  &#x2F;&#x2F;查看当前系统所有的用户</span><br><span class="line"></span><br><span class="line">\\PC-20201011FKXV 的用户帐户</span><br><span class="line"></span><br><span class="line">-------------------------------------------------------------------------------</span><br><span class="line">Administrator            DefaultAccount           Guest</span><br><span class="line">WDAGUtilityAccount</span><br><span class="line">命令成功完成。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">λ net user Administrator  &#x2F;&#x2F;查看该系统的详细信息。</span><br><span class="line"></span><br><span class="line">用户名                 Administrator</span><br><span class="line">全名</span><br><span class="line">注释                   管理计算机(域)的内置帐户</span><br><span class="line">用户的注释</span><br><span class="line">国家&#x2F;地区代码          000 (系统默认值)</span><br><span class="line">帐户启用               Yes</span><br><span class="line">帐户到期               从不</span><br><span class="line"></span><br><span class="line">上次设置密码           2020&#x2F;10&#x2F;20 8:35:32</span><br><span class="line">密码到期               从不</span><br><span class="line">密码可更改             2020&#x2F;10&#x2F;20 8:35:32</span><br><span class="line">需要密码               Yes</span><br><span class="line">用户可以更改密码       Yes</span><br><span class="line"></span><br><span class="line">允许的工作站           All</span><br><span class="line">登录脚本</span><br><span class="line">用户配置文件</span><br><span class="line">主目录</span><br><span class="line">上次登录               2020&#x2F;11&#x2F;4 8:38:55</span><br><span class="line"></span><br><span class="line">可允许的登录小时数     All</span><br><span class="line"></span><br><span class="line">本地组成员             *Administrators</span><br><span class="line">全局组成员             *None</span><br><span class="line">命令成功完成。</span><br></pre></td></tr></table></figure>
 
-        </article>
-        
-        
+<h3 id="2、查看当前权限"><a href="#2、查看当前权限" class="headerlink" title="2、查看当前权限"></a>2、查看当前权限</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">λ whoami</span><br><span class="line">pc-20201011fkxv\administrator</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、添加用户"><a href="#3、添加用户" class="headerlink" title="3、添加用户"></a>3、添加用户</h3>
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。 </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -235,11 +299,11 @@
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 
 </body>

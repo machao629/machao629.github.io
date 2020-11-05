@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>machao629</title>
+  <title>NDK开发环境搭建 | machao629</title>
   <meta name="keywords" content="">
-  <meta name="description" content="machao629">
+  <meta name="description" content="NDK开发环境搭建 | machao629">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -54,7 +54,7 @@
 
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/avatar.jpg" />
@@ -199,12 +199,51 @@
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-Android逆向中常用的命令" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Welcome-To-machao629-center-gt"><span class="toc-text">Welcome To machao629&#x2F;center&gt;</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Emachao629"><span class="toc-text">关于machao629</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AF%B4%E6%98%8E"><span class="toc-text">快捷键说明</span></a></li></ol></li></ol>
+        <h1 class="article-title">NDK开发环境搭建</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="安卓逆向">安卓逆向</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2020-10-23 09:34:43'>2020-10-22 20:26</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E9%9D%9Eshell%E5%91%BD%E4%BB%A4"><span class="toc-text">一、非shell命令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81shell%E5%91%BD%E4%BB%A4"><span class="toc-text">二、shell命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#0x01-ps"><span class="toc-text">0x01 ps</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x02-pm-clear"><span class="toc-text">0x02 pm clear</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x03"><span class="toc-text">0x03</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -217,16 +256,44 @@
     }
 </style>
 </div>
-            <h1 id="Welcome-To-machao629-center-gt"><a href="#Welcome-To-machao629-center-gt" class="headerlink" title="Welcome To machao629/center&gt;"></a><center>Welcome To machao629/center&gt;</h1><h2 id="关于machao629"><a href="#关于machao629" class="headerlink" title="关于machao629"></a>关于machao629</h2><p><strong>machao629</strong> 是一个记录学习的博客。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="快捷键说明"><a href="#快捷键说明" class="headerlink" title="快捷键说明"></a>快捷键说明</h2><blockquote>
-<p><a target="_blank" rel="noopener" href="http://yelog.org/2017/03/24/3-hexo-shortcuts/">http://yelog.org/2017/03/24/3-hexo-shortcuts/</a></p>
-</blockquote>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">把命令分为shell命令和非shell命令。把提前需要adb shell命令运行的命令叫做shell命令。直接用adb shell+命令 运行的命令叫做非shell命令。</span><br></pre></td></tr></table></figure>
 
-        </article>
-        
-        
+<h1 id="一、非shell命令"><a href="#一、非shell命令" class="headerlink" title="一、非shell命令"></a>一、非shell命令</h1><h1 id="二、shell命令"><a href="#二、shell命令" class="headerlink" title="二、shell命令"></a>二、shell命令</h1><h2 id="0x01-ps"><a href="#0x01-ps" class="headerlink" title="0x01 ps"></a>0x01 ps</h2><p>1、ps</p>
+<blockquote>
+<p>查看设备的进程信息</p>
+</blockquote>
+<p>2、 ps | grep 过滤内容</p>
+<blockquote>
+<p>在ps返回的进程信息中寻找想要找的内容</p>
+</blockquote>
+<p>3、 ps -t [pid]</p>
+<blockquote>
+<p> 查看pid对应的线程信息</p>
+</blockquote>
+<h2 id="0x02-pm-clear"><a href="#0x02-pm-clear" class="headerlink" title="0x02 pm clear"></a>0x02 pm clear</h2><p>1、pm clear [packagename]</p>
+<blockquote>
+<p>清空一个应用的数据(root环境下)</p>
+</blockquote>
+<h2 id="0x03"><a href="#0x03" class="headerlink" title="0x03"></a>0x03</h2>
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。 </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -235,11 +302,11 @@
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 
 </body>
