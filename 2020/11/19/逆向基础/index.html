@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hello World | machao629</title>
+  <title>逆向基础 | machao629</title>
   <meta name="keywords" content="">
-  <meta name="description" content="Hello World | machao629">
+  <meta name="description" content="逆向基础 | machao629">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="一个默默无闻的安全小卒。一个啥都不会的脚本小子。一个立志成为大佬的大佬。一个将来牛逼哄哄的博客。">
 <meta property="og:type" content="website">
@@ -195,19 +195,27 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-逆向基础" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hello World</h1>
+        <h1 class="article-title">逆向基础</h1>
     
     <div class="article-meta">
         
         
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="安卓逆向">安卓逆向</a>
+            
+        </span>
         
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-10-21 13:34:28'>2020-10-21 13:34</time>
+            发布时间 : <time class="date" title='最后更新: 2020-12-15 10:18:15'>2020-11-19 21:25</time>
         
     </div>
     <div class="article-meta">
@@ -229,7 +237,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">一、环境搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81APK%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="toc-text">二、APK文件结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81APK%E6%89%93%E5%8C%85%E6%B5%81%E7%A8%8B"><span class="toc-text">三、APK打包流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81APK%E5%AE%89%E5%8D%93%E6%B5%81%E7%A8%8B"><span class="toc-text">四、APK安卓流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-text">五、虚拟机</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81AndroidKiller"><span class="toc-text">六、AndroidKiller</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E7%AF%A1%E6%94%B9apk-%E5%9B%BE%E6%A0%87%E5%90%8D%E7%A7%B0"><span class="toc-text">七、篡改apk 图标名称</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -245,19 +253,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <h2 id="一、环境搭建"><a href="#一、环境搭建" class="headerlink" title="一、环境搭建"></a>一、环境搭建</h2><p>需要安装jdk、sdk、ndk还有Android studio。<br>需要进行翻墙处理。具体的细节不在这里描述。</p>
+<h2 id="二、APK文件结构"><a href="#二、APK文件结构" class="headerlink" title="二、APK文件结构"></a>二、APK文件结构</h2><p>Android应用程序是以apk格式的文件进行发布的，源代码文件、资源文件、AndroidManifetst.xml文件等会被压缩到apk文件中。apk文件和jar包一样，是一个zip文件。</p>
+<p>将apk后缀改为zip后，文件目录一般如下：</p>
+<h2 id="三、APK打包流程"><a href="#三、APK打包流程" class="headerlink" title="三、APK打包流程"></a>三、APK打包流程</h2><h2 id="四、APK安卓流程"><a href="#四、APK安卓流程" class="headerlink" title="四、APK安卓流程"></a>四、APK安卓流程</h2><p>1、复制到/data/app/ 目录下以自己<br>2、<br>3、<br>4、<br>5、对dex(源码)进行一个优化工作，保存至虚拟机缓存目录。<br>6、解析Androidmainfast.xml(配置清单)出四大组件信息。就开始发送广播，</p>
+<h2 id="五、虚拟机"><a href="#五、虚拟机" class="headerlink" title="五、虚拟机"></a>五、虚拟机</h2><p>1、jvm；java编译后生成java字节码，需要jvm将java字节码翻译成汇编指令。运行在操作系统上。</p>
+<p>2、dvm：安卓虚拟机，每个进程一个虚拟机。通过解释dex字节码。</p>
+<p>dalivk虚拟机</p>
+<p>MT文件管理器</p>
+<p>通过版本在文件里面区分是那个虚拟机art/dalvik</p>
+<p>/system/bin/dexopt<br>/system/bin/dex2oat</p>
+<h2 id="六、AndroidKiller"><a href="#六、AndroidKiller" class="headerlink" title="六、AndroidKiller"></a>六、AndroidKiller</h2><p>1、登录以后配置jdk路径(jdk bin目录)<br>2、配饰apktool必须是2.4版本。</p>
+<h2 id="七、篡改apk-图标名称"><a href="#七、篡改apk-图标名称" class="headerlink" title="七、篡改apk 图标名称"></a>七、篡改apk 图标名称</h2><p><Application >入口点<br><provider >发布者签名</p>
+<p>雷电模拟器</p>
+<p>改名直接在xml改<br>一定是png格式的<br>在res目录下。<br>明天补一下笔记。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。 </span>
